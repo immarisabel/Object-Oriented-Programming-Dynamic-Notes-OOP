@@ -26,11 +26,11 @@ this is the SuperClass constructor being called with ►fieldOne◄ and ►field
 
 :eyes: GETTERS/SETTERS VISIBILITY  (from Main class)
 
-:heavy_check_mark: this is fieldOne (validation from SuperClass)
-:heavy_check_mark: this is fieldTwo (validation from SuperClass)
-:x: fieldThreeStatic is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
-:heavy_check_mark: this is fieldFour (validation from SuperClass)
-:x: fieldFiveFS is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
+- :heavy_check_mark: this is fieldOne (validation from SuperClass)
+- :heavy_check_mark: this is fieldTwo (validation from SuperClass)
+- :x: fieldThreeStatic is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
+- :heavy_check_mark: this is fieldFour (validation from SuperClass)
+- :x: fieldFiveFS is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
 
 :warning: DIFFERENCE OF STATIC VS FINAL
 
