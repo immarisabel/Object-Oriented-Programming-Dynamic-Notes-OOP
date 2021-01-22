@@ -63,8 +63,11 @@ public class MainClass {
                         OVERRIDING: what I did using the SubClass parameters to go on top of the SuperClass parameters."""
                 );
 
+        System.out.println("\n ♥ ♥ ♥ ♥ ♥ ABSTRACT CLASS\n");
+        System.out.println("We cannot create an Object. It will generate an error.");
 
-
+        System.out.println(" AbstractClass abstractClass = new AbstractClass();");
+        System.out.println("ERROR: 'AbstractClass' is abstract; cannot be instantiated");
     }
 
 

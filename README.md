@@ -13,7 +13,48 @@ _This is the result of the code._
 _Feel free to play with the fields and methods to practice. I used InteliJ for the coding._
 
 
- ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+
+## MAIN CONCEPTS OF OOP IN JAVA
+### 1. Encapsulation : private vs public fields. We use private and use getter/setter to access. 
+   
+a. GETTERS need return statements
+
+####  
+    public String getFieldTwoPrivate() {
+        System.out.println("✔ this is fieldTwo (validation from SuperClass)");
+        return fieldTwoPrivate;
+    }
+b. SETTERS need parameters
+#### 
+    public void setFieldTwoPrivate(String fieldTwoPrivate) {
+        this.fieldTwoPrivate = fieldTwoPrivate;
+    }
+
+### 2. Inheritance (Subclass and Superclass)
+  public class __SubClass__ _extends_ __SuperClass__
+
+### 3. Polymorphism
+- many classes are related to each other via use of inheritance.
+
+- __AnimalClass__ has brains and hearts
+  - __Dogs__ have 4 legs and fur, but also brain and heart
+  - __Birds__ have 2 legs and wings, but also brain and heart
+  - __Turtle__ have 4 legs and a shell, but also brain and heart
+
+### 4. Abstraction
+- Abstraction can be achieved with either abstract classes or interfaces (?)
+- The abstract keyword is a non-access modifier:
+  - __Abstract class:__ restricted & cannot create objects (only when inherited).
+    - __Abstract method:__ only used in an abstract class, without body (it is inherited from subClass).
+
+- Why And When To Use Abstract Classes and Methods?
+    To achieve security - hide certain details and only show the important details of an object.
+
+### :woman_shrugging I still do not get the point.
+
+♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+
 
 :hammer_and_wrench: CONSTRUCTOR CALL FOR OBJECT CREATION (from Main class)
 
