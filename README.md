@@ -108,3 +108,8 @@ _Same name, same parameters, SubClass extended from SuperClass._
 ### ⚠️ DIFFERENCE OF OVERLOADING VS OVERRIDING
 - OVERLOADING: using same name but different type or parameters for the class, inside the same class.
 - OVERRIDING: what I did using the SubClass parameters to go on top of the SuperClass parameters.
+
+## TO DO:
+[ ] Default Constructor
+[ ] Hiding Superclasses?
+[ ] Abstract Classes
