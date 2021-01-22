@@ -1,4 +1,3 @@
-package ObjectOrientedProgramming;
 
 /* revision notes for OOP */
 
@@ -11,6 +10,8 @@ public class MainClass {
         System.out.println("\n\uD83D\uDEE0️ CONSTRUCTOR CALL FOR OBJECT CREATION (from Main class)\n");
         SuperClass superClassObjectCreatedFromConstructor = new SuperClass(11,"a string");
         System.out.println("\uD83D\uDC40️ GETTERS/SETTERS VISIBILITY  (from Main class)\n");
+
+        System.out.println(" ♥ ♥ ♥ ♥ ♥ SUPERCLASS ACCESS\n");
         superClassObjectCreatedFromConstructor.getFieldOnePublic();
         superClassObjectCreatedFromConstructor.getFieldTwoPrivate();
         System.out.println("❌ fieldThreeStatic is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.");
@@ -30,6 +31,29 @@ public class MainClass {
         System.out.println("fieldTwo is now "+superClassObjectCreatedFromConstructor.getFieldTwoPrivate());
         System.out.println("fieldFour is always "+superClassObjectCreatedFromConstructor.getFieldFourFinal());
 
+        System.out.println("\n ♥ ♥ ♥ ♥ ♥ SUBCLASS ACCESS\n");
+        SubClass subClassObjectCreatedFromConstructor = new SubClass(33, ">String from SuperClass inside Parameter<");
+        System.out.println("• Public Field One via subclass: " + subClassObjectCreatedFromConstructor.getFieldOnePublic());
+        System.out.println("• Private Field Two via subclass: " + subClassObjectCreatedFromConstructor.getFieldTwoPrivate());
+        System.out.println("• Final Field Four via subclass: " + subClassObjectCreatedFromConstructor.getFieldFourFinal());
+
+        System.out.println("• Private Field Six from subclass: " + subClassObjectCreatedFromConstructor.getFieldSixPrivate());
+        System.out.println("• Public Field Seven from subclass: " + subClassObjectCreatedFromConstructor.getFieldSevenPublic());
+
+        System.out.println("\n ♥ ♥ ♥ ♥ ♥ USING OVERLOADED METHOD\n");
+        SubClass subClassOverloading = new SubClass(44, "overloading 1", "overloading 2", "overloading 3");
+        System.out.println("\nOVERLOADED PARAMETERS: "+ subClassOverloading.getFieldOnePublic()+ ", "+subClassOverloading.getFieldTwoPrivate()+", "+subClassOverloading.getFieldFourFinal()+", "+subClassOverloading.getFieldSixPrivate()+", "+subClassOverloading.getFieldSevenPublic()+"\n");
+
+        System.out.println("OVERLOADING CHECK if it overwrites previous object.");
+        System.out.println("First Object, fieldOne: "+subClassObjectCreatedFromConstructor.getFieldOnePublic());
+        System.out.println("Second Object, fieldOne: "+subClassOverloading.getFieldOnePublic());
+        System.out.println("It does not ✔");
+
+
+        System.out.println("\n ♥ ♥ ♥ ♥ ♥ OVERRIDING METHOD TEST\n");
+        System.out.println("Create object:");
+        SubClass subClassOverriding = new SubClass(66,"overriding 1","overriding 2","overriding 3");
+        
     }
 
 

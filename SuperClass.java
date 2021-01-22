@@ -1,4 +1,3 @@
-package ObjectOrientedProgramming;
 
 public class SuperClass {
 
@@ -29,7 +28,7 @@ public class SuperClass {
     A static and final field is also called a "constant" because it never changes.
     */
 
-    final static String fieldFiveFS = "final and static!";
+    final static String fieldFiveFS = "FIVE final and static!";
 
     public SuperClass(int fieldOnePublic, String fieldTwoPrivate) {
         /*this constructor could only access fieldOne and fieldTwo as they are not static nor final.
