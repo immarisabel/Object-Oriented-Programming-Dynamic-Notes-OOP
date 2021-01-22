@@ -32,11 +32,11 @@ this is the SuperClass constructor being called with ►fieldOne◄ and ►field
 - :heavy_check_mark: __this is fieldFour__ (validation from SuperClass)
 - :x: __fieldFiveFS__ is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
 
--Hierarchy from leats strict to most strict is as follow:
-- -public
-- -private
-- -final
-- -static
+- Hierarchy from leats strict to most strict is as follow:
+    --public
+    --private
+    --final
+    --static
 
 :warning: DIFFERENCE OF STATIC VS FINAL
 
