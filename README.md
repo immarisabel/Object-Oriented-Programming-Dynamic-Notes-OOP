@@ -51,8 +51,8 @@ b. SETTERS need parameters
 - Why And When To Use Abstract Classes and Methods?
     To achieve security - hide certain details and only show the important details of an object.
 
-### :woman_shrugging: I still do not get the point.
-
+  ### :woman_shrugging: I still do not get the point. 22/1/21
+ 
 ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
 
 
