@@ -32,11 +32,11 @@ this is the SuperClass constructor being called with ►fieldOne◄ and ►field
 - :heavy_check_mark: __this is fieldFour__ (validation from SuperClass)
 - :x: __fieldFiveFS__ is not accessible via the create object because it is static inside it's Class. Even if this MAIN method is static, it is still protected.
 
-- Hierarchy from leats strict to most strict is as follow:
-    - public
-    - private
-    - final
-    - static
+- Hierarchy from __least strict__ to __most strict__ is as follow:
+    - public - full access without constructor
+    - private - no access without constructor 
+    - final - full view possible, no editing allowed
+    - static - no access at all, only inside own class
 
 :warning: DIFFERENCE OF STATIC VS FINAL
 
