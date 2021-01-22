@@ -30,6 +30,10 @@ public class SuperClass {
 
     final static String fieldFiveFS = "FIVE final and static!";
 
+    public void OverridingClass (String text){
+        System.out.println("This is the original text of the OverridingClass.");
+    }
+
     public SuperClass(int fieldOnePublic, String fieldTwoPrivate) {
         /*this constructor could only access fieldOne and fieldTwo as they are not static nor final.
         * Constructors need to have same name as class.
@@ -82,4 +86,6 @@ public class SuperClass {
     public static String getFieldFiveFS() {
         return fieldFiveFS;
     }
+
+
 }

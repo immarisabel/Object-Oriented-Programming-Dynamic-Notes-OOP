@@ -1,6 +1,8 @@
 
 /* revision notes for OOP */
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class MainClass {
 
     public static void main(String[] args) {
@@ -40,20 +42,29 @@ public class MainClass {
         System.out.println("• Private Field Six from subclass: " + subClassObjectCreatedFromConstructor.getFieldSixPrivate());
         System.out.println("• Public Field Seven from subclass: " + subClassObjectCreatedFromConstructor.getFieldSevenPublic());
 
-        System.out.println("\n ♥ ♥ ♥ ♥ ♥ USING OVERLOADED METHOD\n");
-        SubClass subClassOverloading = new SubClass(44, "overloading 1", "overloading 2", "overloading 3");
-        System.out.println("\nOVERLOADED PARAMETERS: "+ subClassOverloading.getFieldOnePublic()+ ", "+subClassOverloading.getFieldTwoPrivate()+", "+subClassOverloading.getFieldFourFinal()+", "+subClassOverloading.getFieldSixPrivate()+", "+subClassOverloading.getFieldSevenPublic()+"\n");
+        System.out.println("\n ♥ ♥ ♥ ♥ ♥ USING OVERRIDING METHOD\n");
+        SubClass subClassOverriding = new SubClass(44, "overriding 1", "overriding 2", "overriding 3");
+        System.out.println("\nOVERRIDEN PARAMETERS: "+ subClassOverriding.getFieldOnePublic()+ ", "+subClassOverriding.getFieldTwoPrivate()+", "+subClassOverriding.getFieldFourFinal()+", "+subClassOverriding.getFieldSixPrivate()+", "+subClassOverriding.getFieldSevenPublic()+"\n");
 
-        System.out.println("OVERLOADING CHECK if it overwrites previous object.");
+        System.out.println("OVERRIDING CHECK if it overwrites previous object.");
         System.out.println("First Object, fieldOne: "+subClassObjectCreatedFromConstructor.getFieldOnePublic());
-        System.out.println("Second Object, fieldOne: "+subClassOverloading.getFieldOnePublic());
+        System.out.println("Second Object, fieldOne: "+subClassOverriding.getFieldOnePublic());
         System.out.println("It does not ✔");
 
+        System.out.println("\n");
 
-        System.out.println("\n ♥ ♥ ♥ ♥ ♥ OVERRIDING METHOD TEST\n");
-        System.out.println("Create object:");
-        SubClass subClassOverriding = new SubClass(66,"overriding 1","overriding 2","overriding 3");
-        
+        superClassObjectCreatedFromConstructor.OverridingClass("original text");
+        subClassOverriding.OverridingClass("overriden text");
+
+
+        System.out.println("""
+                        ⚠️ DIFFERENCE OF OVERLOADING VS OVERRIDING
+                        OVERLOADING: using same name but different type or parameters for the class, inside the same class.
+                        OVERRIDING: what I did using the SubClass parameters to go on top of the SuperClass parameters."""
+                );
+
+
+
     }
 
 

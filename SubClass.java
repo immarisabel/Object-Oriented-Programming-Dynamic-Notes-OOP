@@ -8,11 +8,26 @@ public class SubClass extends SuperClass{
     private String fieldSixPrivate = "six";
     public String fieldSevenPublic = "seven";
 
+    @Override
+    public void OverridingClass (String text){
+        System.out.println("This is the overriden text of the OverridingClass.");
+    }
+
+    @Override
+    public int getFieldFourFinal() {
+        System.out.println("Verify Final field Four Overriding.");
+        return super.getFieldFourFinal();
+    }
+
     public SubClass(int fieldOnePublic, String fieldTwoPrivate) {
         super(fieldOnePublic, fieldTwoPrivate);
     }
 
-    /*This is method overloading. Both classes are named SubClass, but since both have different parameters, it is legal.*/
+
+    /*This is method overloading. Both classes are named SubClass,
+    but since both have different parameters,
+    it is legal. It can also be different data type.*/
+
     public SubClass(int fieldOnePublic, String fieldTwoPrivate, String fieldSixPrivate, String fieldSevenPublic) {
         super(fieldOnePublic, fieldTwoPrivate);
         this.fieldSixPrivate = fieldSixPrivate;
@@ -27,25 +42,6 @@ public class SubClass extends SuperClass{
     }
     * int 55 from fieldOne will not be allowed to be set form Main Class. And will remain 55.
     * */
-
-    @Override
-    public int getFieldOnePublic() {
-        System.out.println("Overriding Field One");
-        return super.getFieldOnePublic();
-
-    }
-
-    @Override
-    public String getFieldTwoPrivate() {
-        System.out.println("Overriding Field Two");
-        return super.getFieldTwoPrivate();
-    }
-
-    @Override
-    public int getFieldFourFinal() {
-        System.out.println("Overriding Field Four");
-        return super.getFieldFourFinal();
-    }
 
 
     /*Getter and Setter only available for the fields in SubClass since the other ones are already existent.*/
@@ -69,5 +65,4 @@ public class SubClass extends SuperClass{
 
 
 
-    //TODO method overriding
 }
