@@ -79,15 +79,15 @@ To use these fields, we use the getters via the Object constructed.
 ### ♥ ♥ ♥ ♥ ♥ USING OVERRIDING METHOD
 
 this is the SuperClass constructor being called with ►fieldOne◄ and ►fieldTwo◄. (validation from SuperClass)
-✔ 44 ◄◄ this is FieldOne as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)
-✔ overriding 1 ◄◄ this is FieldTwo as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)
+- ✔ 44 ◄◄ this is FieldOne as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)
+- ✔ overriding 1 ◄◄ this is FieldTwo as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)
 
-✔ this is fieldOne (validation from SuperClass)
-✔ this is fieldTwo (validation from SuperClass)
-Verify Final field Four Overriding.
-✔ this is fieldFour (validation from SuperClass)
-✔ this is fieldSix (validation from SubClass)
-✔ this is fieldSeven (validation from SubClass)
+- ✔ this is fieldOne (validation from SuperClass)
+- ✔ this is fieldTwo (validation from SuperClass)
+- Verify Final field Four Overriding.
+- ✔ this is fieldFour (validation from SuperClass)
+- ✔ this is fieldSix (validation from SubClass)
+- ✔ this is fieldSeven (validation from SubClass)
 
 #### OVERRIDEN PARAMETERS:
 44, overriding 1, 4, overriding 2, overriding 3
