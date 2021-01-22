@@ -48,6 +48,11 @@ b. SETTERS need parameters
   - __Abstract class:__ restricted & cannot create objects (only when inherited).
     - __Abstract method:__ only used in an abstract class, without body (it is inherited from subClass).
 
+- Why And When To Use Abstract Classes and Methods?
+    
+  - To achieve security - hide certain details and only show the important details of an object.
+   ### :woman_shrugging: I still do not get the point. 22/1/21
+ 
 ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
 
 

@@ -6,7 +6,7 @@ import jdk.swing.interop.SwingInterOpUtils;
 public class MainClass {
 
     public static void main(String[] args) {
-        div();
+
         System.out.println("WELCOME TO MY OBJECT ORIENTED PROGRAMMING NOTES!\n this is the result of HOURS of learning via videos and excercises. After 20 hours, here I review the effects of OOP per field/variable and methods. As well as using Super and Sub classes, overloading and overwriting methods.\n I will keep adding to this program my notes as I learn more about OOP.\n NOTE: this is all after 2 months of studying and playing with Java's Syntax.");
         div();
         System.out.println("\n\uD83D\uDEE0️ CONSTRUCTOR CALL FOR OBJECT CREATION (from Main class)\n");
@@ -68,6 +68,15 @@ public class MainClass {
 
         System.out.println(" AbstractClass abstractClass = new AbstractClass();");
         System.out.println("ERROR: 'AbstractClass' is abstract; cannot be instantiated");
+
+        div();
+
+        inheritedAbstractClass abstractClass = new inheritedAbstractClass();
+        abstractClass.AbstractClassMethod();
+        System.out.println("Field Eight: "+abstractClass.getAbstractFieldEight());
+        System.out.println("inheritedAbstractClass has access to fieldEight through Abstract class.\n");
+
+        div();
     }
 
 
