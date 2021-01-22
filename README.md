@@ -10,7 +10,7 @@ NOTE: this is all after 2 months of studying and playing with Java's Syntax.
 
 _This is the result of the code._
 
-_Feel free to play with the fields and methods to practice._
+_Feel free to play with the fields and methods to practice. I used InteliJ for the coding._
 
 
  ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
