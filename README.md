@@ -199,3 +199,22 @@ This is the method template from the AbstractClass.Which does not make sense sin
 - This is the Interface method One
 - This is the Interface method Two
 - This is the Interface method Three
+
+Interfaces are like a contract on method's signatures, so we do not end up breaking code.
+
+We define the methods without bodies.
+
+We can create many classes that depend on these methods and parameters
+
+## What is the difference?
+Interface is an Abstract class, but Abstract class is not an interface.
+
+Abstract class can have members variables that are inherited. Unlike, interfaces, it is really like a recipe, which you can use and adjust as needed. You can define methods, but the code is in the subclass.
+
+When to use: if the classes are similar, need private or protected, and non static fields. You want to be able to modify fields.
+It provides a common definition of a class for other classes to share.
+
+Interfaces variables are all public, static and final (you can use private methods from Java 9). Constant values that never change. Because it is like a contract, it is MUCH more strict. Also methods are statics, and they cannot have constructors.
+
+When to use: Unrelated classes want to use it. You want to specify the behaviour of a data type but don't care who uses it. JDBC API is an example. 
+
