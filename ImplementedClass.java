@@ -6,7 +6,13 @@ public class ImplementedClass implements InterfaceClass{
     private String iTwo;
     private int iThree;
 
-    /*Alt insert = implement methods*/
+    /*Alt insert = implement methods
+    * Also create constructor.*/
+
+    public ImplementedClass(String iTwo, int iThree) {
+        this.iTwo = iTwo;
+        this.iThree = iThree;
+    }
 
     @Override
     public void methodDefinedOne() {

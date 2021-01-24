@@ -30,7 +30,8 @@ then you want to stick with interfaces.
 abstract class AbstractClass {
 
     /*Abstract Methods are a template for classes. Classes are a template for objects.
-    That is why you cannot create objects form abstract classes. Only from Inherited class.*/
+    That is why you cannot create objects form abstract classes. Only from Inherited class.
+    Unlike Interface, you can select what to implement. While Interfaces, you need to use all methods defined.*/
 
     public String abstractFieldOne = "[AF1 public]";
     private String abstractFieldTwo = "[AF2 private]";

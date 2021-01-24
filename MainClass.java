@@ -118,7 +118,12 @@ public class MainClass {
 
         div();
 
-
+        /*INTERFACE CLASSES*/
+        System.out.println("\n  INTERFACE CLASS\n");
+        ImplementedClass implementedClass = new ImplementedClass("Two", 3);
+        implementedClass.methodDefinedOne();
+        implementedClass.methodDefinedTwo("Two2");
+        implementedClass.methodDefinedThree(33);
     }
 
 

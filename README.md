@@ -151,7 +151,51 @@ _Same name, same parameters, SubClass extended from SuperClass._
 - OVERLOADING: using same name but different type or parameters for the class, inside the same class.
 - OVERRIDING: what I did using the SubClass parameters to go on top of the SuperClass parameters.
 
-## TO DO:
-[ ] Default Constructor
-[ ] Hiding Superclasses?
-[ ] Abstract Classes
+
+### PROTECTED FIELD
+
+- ✔ this is fieldNineProtected (validation from SuperClass)
+  - NINE protected
+- ✔ this is fieldNineProtected (validation from SuperClass)
+  - New fieldNine
+- ✔ this is fieldNineProtected (validation from SuperClass)
+  - Inherited via SubClass: fieldNineProtected from parameter
+
+### DEFAULT FIELD
+
+- ✔ this is fieldTenDefault (validation from SuperClass)
+  - TEN default
+- ✔ this is fieldTenDefault (validation from SuperClass)
+  - New fieldTen
+- ✔ this is fieldTenDefault (validation from SuperClass)
+  - Inherited via SubClass: fieldTenDefault from parameter
+
+
+
+## ABSTRACT CLASS
+
+We cannot create an Object. It will generate an error.
+AbstractClass abstractClass = new AbstractClass();
+ERROR: 'AbstractClass' is abstract; cannot be instantiated
+
+####
+  Public AF1 validation from AbstractClass
+  Inherited AF1 : ✔ public P-AF1
+  Private AF2 validation from AbstractClass
+  Inherited AF2 : ✔ private P-AF2
+  Protected AF3 validation from AbstractClass
+  Inherited AF3 : ✔ protected P-AF3
+  Inherited AF4 : cannot be reached.
+  Final AF5 validation from AbstractClass
+  Inherited AF5 : [AF5 final]
+  Default AF6 validation from AbstractClass
+  Inherited AF6 : ✔ default P-AF6
+
+This is the method template from the AbstractClass.Which does not make sense since it is empty. But we can use the fields.
+
+
+## INTERFACE CLASS
+
+This is the Interface method One
+This is the Interface method Two
+This is the Interface method Three
