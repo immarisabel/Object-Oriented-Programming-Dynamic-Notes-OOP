@@ -30,8 +30,17 @@ public class SuperClass {
 
     final static String fieldFiveFS = "FIVE final and static!";
 
+    protected String fieldNineProtected = "NINE protected";
+
+    String fieldTenDefault = "TEN default";
+
     public void OverridingClass (String text){
         System.out.println("This is the original text of the OverridingClass.");
+    }
+
+    public SuperClass(String fieldNineProtected, String fieldTenDefault) {
+        this.fieldNineProtected = fieldNineProtected;
+        this.fieldTenDefault = fieldTenDefault;
     }
 
     public SuperClass(int fieldOnePublic, String fieldTwoPrivate) {
@@ -41,14 +50,14 @@ public class SuperClass {
         this.fieldOnePublic = fieldOnePublic;
         this.fieldTwoPrivate = fieldTwoPrivate;
         System.out.println("this is the SuperClass constructor being called with ►fieldOne◄ and ►fieldTwo◄. (validation from SuperClass)\n"+
-                "✔ " +this.fieldOnePublic +" ◄◄ this is FieldOne as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)\n"+
-                "✔ " +this.fieldTwoPrivate +" ◄◄ this is FieldTwo as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)\n");
+                "✔ " +this.fieldOnePublic +" ◄◄ this is FieldOnePublic as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)\n"+
+                "✔ " +this.fieldTwoPrivate +" ◄◄ this is FieldTwoPrivate as called inside the --Objects' parameters-- not the --Constructor--. (validation from SuperClass)\n");
     }
 
 
     /*I was able to access all 4 fields via getters/setters*/
     public int getFieldOnePublic() {
-        System.out.println("✔ this is fieldOne (validation from SuperClass)");
+        System.out.println("✔ this is fieldOnePublic (validation from SuperClass)");
         return fieldOnePublic;
     }
 
@@ -58,7 +67,7 @@ public class SuperClass {
 
     /*SETTERS need parameters*/
     public String getFieldTwoPrivate() {
-        System.out.println("✔ this is fieldTwo (validation from SuperClass)");
+        System.out.println("✔ this is fieldTwoPrivate (validation from SuperClass)");
         return fieldTwoPrivate;
     }
     /*GETTERS need return statements*/
@@ -67,7 +76,7 @@ public class SuperClass {
     }
 
     public static double getFieldThreeStatic() {
-        System.out.println("✔ this is fieldThree (validation from SuperClass)");
+        System.out.println("✔ this is fieldThreeStatic (validation from SuperClass)");
         return fieldThreeStatic;
     }
 
@@ -78,9 +87,27 @@ public class SuperClass {
     }
 
     public int getFieldFourFinal() {
-        System.out.println("✔ this is fieldFour (validation from SuperClass)");
+        System.out.println("✔ this is fieldFourFinal (validation from SuperClass)");
         return fieldFourFinal;
         /*fieldFour can only be access but not modified, hence we only recived a GETTER and not a SETTER*/
+    }
+
+    public String getFieldNineProtected() {
+        System.out.println("✔ this is fieldNineProtected (validation from SuperClass)");
+        return fieldNineProtected;
+    }
+
+    public void setFieldNineProtected(String fieldNineProtected) {
+        this.fieldNineProtected = fieldNineProtected;
+    }
+
+    public String getFieldTenDefault() {
+        System.out.println("✔ this is fieldTenDefault (validation from SuperClass)");
+        return fieldTenDefault;
+    }
+
+    public void setFieldTenDefault(String fieldTenDefault) {
+        this.fieldTenDefault = fieldTenDefault;
     }
 
     public static String getFieldFiveFS() {

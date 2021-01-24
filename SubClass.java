@@ -5,8 +5,8 @@
 
 public class SubClass extends SuperClass{
 
-    private String fieldSixPrivate = "six";
-    public String fieldSevenPublic = "seven";
+    private String fieldSixPrivate = "sixPrivate";
+    public String fieldSevenPublic = "sevenPublic";
 
     @Override
     public void OverridingClass (String text){
@@ -17,6 +17,12 @@ public class SubClass extends SuperClass{
     public int getFieldFourFinal() {
         System.out.println("Verify Final field Four Overriding.");
         return super.getFieldFourFinal();
+    }
+
+    public SubClass(String fieldNineProtected, String fieldTenDefault, String fieldSixPrivate, String fieldSevenPublic) {
+        super(fieldNineProtected, fieldTenDefault);
+        this.fieldSixPrivate = fieldSixPrivate;
+        this.fieldSevenPublic = fieldSevenPublic;
     }
 
     public SubClass(int fieldOnePublic, String fieldTwoPrivate) {
@@ -58,6 +64,7 @@ public class SubClass extends SuperClass{
         System.out.println("✔ this is fieldSeven (validation from SubClass)");
         return fieldSevenPublic;
     }
+
 
     public void setFieldSevenPublic(String fieldSevenPublic) {
         this.fieldSevenPublic = fieldSevenPublic;

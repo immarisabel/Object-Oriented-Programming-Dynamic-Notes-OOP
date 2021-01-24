@@ -52,6 +52,7 @@ b. SETTERS need parameters
     
   - To achieve security - hide certain details and only show the important details of an object.
    ### :woman_shrugging: I still do not get the point. 22/1/21
+   ### :heavy_check_mark: I get it now! 23/1/21
  
 ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
 

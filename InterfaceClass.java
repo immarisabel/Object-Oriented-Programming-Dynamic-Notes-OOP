@@ -1,13 +1,11 @@
-public class InterfaceClass {
+public interface InterfaceClass {
 
-    /* Interface classes cannot have abstract fields, only methods*/
+    /* Interfaces are like a contract on method's signatures, so we do not end up breaking code.
+    * We define the methods without bodies.*/
 
-    void fieldNine() {
+     void methodDefinedOne();
+     void methodDefinedTwo(String iTwo);
+     void methodDefinedThree(int iThree);
 
-    }
-
-    void fieldTen() {
-
-    }
 
 }
