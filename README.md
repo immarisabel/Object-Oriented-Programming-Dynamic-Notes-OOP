@@ -178,24 +178,24 @@ We cannot create an Object. It will generate an error.
 AbstractClass abstractClass = new AbstractClass();
 ERROR: 'AbstractClass' is abstract; cannot be instantiated
 
-####
-  Public AF1 validation from AbstractClass
-  Inherited AF1 : ✔ public P-AF1
-  Private AF2 validation from AbstractClass
-  Inherited AF2 : ✔ private P-AF2
-  Protected AF3 validation from AbstractClass
-  Inherited AF3 : ✔ protected P-AF3
-  Inherited AF4 : cannot be reached.
-  Final AF5 validation from AbstractClass
-  Inherited AF5 : [AF5 final]
-  Default AF6 validation from AbstractClass
-  Inherited AF6 : ✔ default P-AF6
+
+  - Public AF1 validation from AbstractClass
+    - Inherited AF1 : ✔ public P-AF1
+  - Private AF2 validation from AbstractClass
+    - Inherited AF2 : ✔ private P-AF2
+  - Protected AF3 validation from AbstractClass
+    - Inherited AF3 : ✔ protected P-AF3
+  - Inherited AF4 : cannot be reached.
+  - Final AF5 validation from AbstractClass
+    - Inherited AF5 : [AF5 final]
+  - Default AF6 validation from AbstractClass
+    - Inherited AF6 : ✔ default P-AF6
 
 This is the method template from the AbstractClass.Which does not make sense since it is empty. But we can use the fields.
 
 
 ## INTERFACE CLASS
 
-This is the Interface method One
-This is the Interface method Two
-This is the Interface method Three
+- This is the Interface method One
+- This is the Interface method Two
+- This is the Interface method Three
