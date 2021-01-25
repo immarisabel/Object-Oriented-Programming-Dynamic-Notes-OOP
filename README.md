@@ -32,7 +32,7 @@ b. SETTERS need parameters
     }
 
 ### 2. Inheritance (Subclass and Superclass)
-  public class __SubClass__ _extends_ __SuperClass__
+  public class __SubClass__  _extends_ __SuperClass__
 
 ### 3. Polymorphism
 - many classes are related to each other via use of inheritance.
